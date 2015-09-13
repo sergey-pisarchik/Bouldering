@@ -18,7 +18,41 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p4Z-KU-O2Z" id="cub-ru-37P">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NoPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="nlv-Tf-huP">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="99.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsM-yp-9dn">
+                                            <rect key="frame" x="108" y="8" width="475" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWn-zY-Uc6">
+                                            <rect key="frame" x="108" y="37" width="475" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="@-mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAi-Ph-Bf3">
+                                            <rect key="frame" x="108" y="66" width="475" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tWn-zY-Uc6" secondAttribute="trailing" constant="9" id="WL7-DF-Pz4"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="OAi-Ph-Bf3" secondAttribute="trailing" constant="9" id="fnN-AO-ZNF"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="OsM-yp-9dn" secondAttribute="trailing" constant="9" id="nUd-3I-244"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mailLabel" destination="OAi-Ph-Bf3" id="dZ8-eA-9ZJ"/>
+                                    <outlet property="nameLabel" destination="OsM-yp-9dn" id="hUw-IL-j8Y"/>
+                                    <outlet property="phoneLabel" destination="tWn-zY-Uc6" id="gJB-hG-kf2"/>
+                                    <outlet property="photoImageView" destination="nlv-Tf-huP" id="KjC-KB-bHo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
