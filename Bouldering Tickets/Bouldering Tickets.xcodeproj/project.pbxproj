@@ -17,6 +17,8 @@
 		93251FB41BA5AF83002A766F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB21BA5AF83002A766F /* UserInfo.swift */; };
 		93251FB61BA5B497002A766F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB51BA5B497002A766F /* UserTableViewCell.swift */; };
 		93251FB71BA5B497002A766F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB51BA5B497002A766F /* UserTableViewCell.swift */; };
+		93251FB91BA5B9D8002A766F /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB81BA5B9D8002A766F /* UserTableViewController.swift */; };
+		93251FBA1BA5B9D8002A766F /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB81BA5B9D8002A766F /* UserTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 		9309E6561BA4636800457576 /* Bouldering_TicketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouldering_TicketsTests.swift; sourceTree = "<group>"; };
 		93251FB21BA5AF83002A766F /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		93251FB51BA5B497002A766F /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		93251FB81BA5B9D8002A766F /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				9309E6421BA4636800457576 /* ViewController.swift */,
 				93251FB21BA5AF83002A766F /* UserInfo.swift */,
 				9309E6441BA4636800457576 /* Main.storyboard */,
+				93251FB81BA5B9D8002A766F /* UserTableViewController.swift */,
 				93251FB51BA5B497002A766F /* UserTableViewCell.swift */,
 				9309E6471BA4636800457576 /* Images.xcassets */,
 				9309E6491BA4636800457576 /* LaunchScreen.xib */,
@@ -220,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93251FB91BA5B9D8002A766F /* UserTableViewController.swift in Sources */,
 				93251FB61BA5B497002A766F /* UserTableViewCell.swift in Sources */,
 				9309E6431BA4636800457576 /* ViewController.swift in Sources */,
 				93251FB31BA5AF83002A766F /* UserInfo.swift in Sources */,
@@ -233,6 +238,7 @@
 			files = (
 				93251FB41BA5AF83002A766F /* UserInfo.swift in Sources */,
 				93251FB71BA5B497002A766F /* UserTableViewCell.swift in Sources */,
+				93251FBA1BA5B9D8002A766F /* UserTableViewController.swift in Sources */,
 				9309E6571BA4636800457576 /* Bouldering_TicketsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
