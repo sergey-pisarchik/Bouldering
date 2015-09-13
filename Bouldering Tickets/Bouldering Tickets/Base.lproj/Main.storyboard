@@ -193,6 +193,7 @@
                     <size key="freeformSize" width="600" height="1200"/>
                     <connections>
                         <outlet property="Phone" destination="8UQ-1x-DI0" id="82y-Rl-Tjt"/>
+                        <outlet property="bottomConstraint" destination="Kc1-Fx-5UZ" id="vhA-1G-Tu0"/>
                         <outlet property="discount" destination="sj2-GZ-SM0" id="7pR-Y7-C2m"/>
                         <outlet property="enterSource" destination="oUL-Xj-JzM" id="nta-ic-1lU"/>
                         <outlet property="fathersName" destination="R69-aT-duj" id="JNU-HG-VdS"/>
@@ -200,6 +201,7 @@
                         <outlet property="mail" destination="HgZ-h4-eYE" id="0QV-xC-XQa"/>
                         <outlet property="note" destination="GK5-DY-kGI" id="F36-dC-ajl"/>
                         <outlet property="photo" destination="6fu-BY-e1h" id="zSz-xh-zHg"/>
+                        <outlet property="scrollView" destination="rJF-EK-14f" id="yWR-IG-d4L"/>
                         <outlet property="secondName" destination="Ipy-ik-n8h" id="Y3p-lk-dt1"/>
                     </connections>
                 </viewController>

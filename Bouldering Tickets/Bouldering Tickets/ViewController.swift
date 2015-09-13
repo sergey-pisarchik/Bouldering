@@ -13,11 +13,44 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector:"onKeyBoard:",
+            name:UIKeyboardWillShowNotification,
+        object:nil);
+        
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector:"onKeyBoardHide:",
+            name:UIKeyboardWillHideNotification,
+            object:nil);
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: observers
+    
+    @objc func onKeyBoard(notification: NSNotification){
+        firstName.text = "111"
+        
+        let userInfo = notification.userInfo
+        if let userInfo = notification.userInfo {
+            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                
+                let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+                firstName.text = keyboardSize.height.description
+                
+                self.bottomConstraint.constant = keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func onKeyBoardHide(notification: NSNotification){
+        self.bottomConstraint.constant = 0
     }
     
     // MARK: Properties
@@ -30,6 +63,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var enterSource: UITextField!
     @IBOutlet weak var discount: UITextField!
     @IBOutlet weak var note: UITextView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
 
 
     // MARK: Actions
