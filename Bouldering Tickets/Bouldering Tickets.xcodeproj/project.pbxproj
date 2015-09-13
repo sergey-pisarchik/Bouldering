@@ -18,7 +18,6 @@
 		93251FB61BA5B497002A766F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB51BA5B497002A766F /* UserTableViewCell.swift */; };
 		93251FB71BA5B497002A766F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB51BA5B497002A766F /* UserTableViewCell.swift */; };
 		93251FB91BA5B9D8002A766F /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB81BA5B9D8002A766F /* UserTableViewController.swift */; };
-		93251FBA1BA5B9D8002A766F /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB81BA5B9D8002A766F /* UserTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,7 +237,6 @@
 			files = (
 				93251FB41BA5AF83002A766F /* UserInfo.swift in Sources */,
 				93251FB71BA5B497002A766F /* UserTableViewCell.swift in Sources */,
-				93251FBA1BA5B9D8002A766F /* UserTableViewController.swift in Sources */,
 				9309E6571BA4636800457576 /* Bouldering_TicketsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
