@@ -134,6 +134,7 @@
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="uPT-7D-0aK" appends="YES" id="arJ-2l-aVd"/>
+                                            <outletCollection property="gestureRecognizers" destination="GEX-7P-544" appends="YES" id="kH4-b8-6bC"/>
                                         </connections>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Заметка" translatesAutoresizingMaskIntoConstraints="NO" id="GK5-DY-kGI">
@@ -191,17 +192,30 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
                     <connections>
+                        <outlet property="Phone" destination="8UQ-1x-DI0" id="82y-Rl-Tjt"/>
+                        <outlet property="discount" destination="sj2-GZ-SM0" id="7pR-Y7-C2m"/>
+                        <outlet property="enterSource" destination="oUL-Xj-JzM" id="nta-ic-1lU"/>
+                        <outlet property="fathersName" destination="R69-aT-duj" id="JNU-HG-VdS"/>
+                        <outlet property="firstName" destination="PqM-W2-PeQ" id="HMz-JA-mI1"/>
+                        <outlet property="mail" destination="HgZ-h4-eYE" id="0QV-xC-XQa"/>
+                        <outlet property="note" destination="GK5-DY-kGI" id="F36-dC-ajl"/>
                         <outlet property="photo" destination="6fu-BY-e1h" id="zSz-xh-zHg"/>
+                        <outlet property="secondName" destination="Ipy-ik-n8h" id="Y3p-lk-dt1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="uPT-7D-0aK">
                     <connections>
-                        <action selector="takeAPhoto:" destination="BYZ-38-t0r" id="Qgf-y5-qIb"/>
+                        <action selector="showPhoto:" destination="BYZ-38-t0r" id="Qgf-y5-qIb"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="GEX-7P-544">
+                    <connections>
+                        <action selector="takePicture:" destination="BYZ-38-t0r" id="2Ct-cK-rVL"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-133" y="602"/>
+            <point key="canvasLocation" x="-131" y="478"/>
         </scene>
     </scenes>
     <resources>
