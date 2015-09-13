@@ -13,6 +13,8 @@
 		9309E6481BA4636800457576 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9309E6471BA4636800457576 /* Images.xcassets */; };
 		9309E64B1BA4636800457576 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9309E6491BA4636800457576 /* LaunchScreen.xib */; };
 		9309E6571BA4636800457576 /* Bouldering_TicketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9309E6561BA4636800457576 /* Bouldering_TicketsTests.swift */; };
+		93251FB31BA5AF83002A766F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB21BA5AF83002A766F /* UserInfo.swift */; };
+		93251FB41BA5AF83002A766F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93251FB21BA5AF83002A766F /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		9309E6501BA4636800457576 /* Bouldering TicketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bouldering TicketsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9309E6551BA4636800457576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9309E6561BA4636800457576 /* Bouldering_TicketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouldering_TicketsTests.swift; sourceTree = "<group>"; };
+		93251FB21BA5AF83002A766F /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 			children = (
 				9309E6401BA4636800457576 /* AppDelegate.swift */,
 				9309E6421BA4636800457576 /* ViewController.swift */,
+				93251FB21BA5AF83002A766F /* UserInfo.swift */,
 				9309E6441BA4636800457576 /* Main.storyboard */,
 				9309E6471BA4636800457576 /* Images.xcassets */,
 				9309E6491BA4636800457576 /* LaunchScreen.xib */,
@@ -213,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9309E6431BA4636800457576 /* ViewController.swift in Sources */,
+				93251FB31BA5AF83002A766F /* UserInfo.swift in Sources */,
 				9309E6411BA4636800457576 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93251FB41BA5AF83002A766F /* UserInfo.swift in Sources */,
 				9309E6571BA4636800457576 /* Bouldering_TicketsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +417,7 @@
 				9309E65C1BA4636800457576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9309E65D1BA4636800457576 /* Build configuration list for PBXNativeTarget "Bouldering TicketsTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				9309E65F1BA4636800457576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
