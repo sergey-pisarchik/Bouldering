@@ -65,8 +65,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var note: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
 
 
+    var user: UserInfo?
+    
     // MARK: Actions
     @IBAction func takePicture(sender: UILongPressGestureRecognizer) {
         
@@ -91,6 +94,33 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         
     }
+    
+    // MARK: Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if saveButton === sender {
+            
+        
+            var fn = firstName.text
+            var sn = secondName.text
+            var fa = fathersName.text
+            var ph = Phone.text
+            var ml = mail.text
+            var es = enterSource.text
+            var ds = discount.text
+            var nt = note.text
+            var im = photo.image
+
+            user = UserInfo(firstName: fn, secondName: sn, fathersName: fa, phone: ph, mail: ml, enterSource: es, discount: ds, note: nt, photo: im)
+            
+          
+
+            
+        }
+        
+    }
+    
     
     // MARK: UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {

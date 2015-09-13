@@ -266,7 +266,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Добавление клиента" id="h51-H2-kvG">
                         <barButtonItem key="leftBarButtonItem" title="Отмена" id="eTW-Ww-XIz"/>
-                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="a0B-QG-BGH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="a0B-QG-BGH">
+                            <connections>
+                                <segue destination="uHe-sZ-x0D" kind="unwind" unwindAction="unwindToMealList:" id="SbB-mc-lxz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
@@ -280,11 +284,13 @@
                         <outlet property="mail" destination="HgZ-h4-eYE" id="0QV-xC-XQa"/>
                         <outlet property="note" destination="GK5-DY-kGI" id="F36-dC-ajl"/>
                         <outlet property="photo" destination="6fu-BY-e1h" id="zSz-xh-zHg"/>
+                        <outlet property="saveButton" destination="a0B-QG-BGH" id="UM6-U0-mTc"/>
                         <outlet property="scrollView" destination="rJF-EK-14f" id="yWR-IG-d4L"/>
                         <outlet property="secondName" destination="Ipy-ik-n8h" id="Y3p-lk-dt1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="uHe-sZ-x0D" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="uPT-7D-0aK">
                     <connections>
                         <action selector="showPhoto:" destination="BYZ-38-t0r" id="Qgf-y5-qIb"/>

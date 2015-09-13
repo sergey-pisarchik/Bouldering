@@ -71,6 +71,15 @@ class UserTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController as? ViewController, user = sourceViewController.user {
+            // Add a new meal.
+            let newIndexPath = NSIndexPath(forRow: users.count, inSection: 0)
+            users.append(user)
+            tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
