@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,25 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: Properties
+    @IBOutlet weak var photo: UIImageView!
 
 
+    // MARK: Actions
+    @IBAction func takeAPhoto(sender: UITapGestureRecognizer) {
+        
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController = UIImagePickerController()
+        
+        // Only allow photos to be picked, not taken.
+        imagePickerController.sourceType = .PhotoLibrary
+        
+        // Make sure ViewController is notified when the user picks an image.
+        imagePickerController.delegate = self
+        
+        presentViewController(imagePickerController, animated: true, completion: nil)
+    }
 }
 

@@ -127,10 +127,14 @@
                                     </label>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="NoPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="6fu-BY-e1h">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="3tG-aZ-ZFN"/>
                                             <constraint firstAttribute="height" constant="200" id="HVr-JK-0Kq"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="uPT-7D-0aK" appends="YES" id="arJ-2l-aVd"/>
+                                        </connections>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Заметка" translatesAutoresizingMaskIntoConstraints="NO" id="GK5-DY-kGI">
                                         <rect key="frame" x="8" y="472" width="341" height="136"/>
@@ -186,8 +190,16 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
+                    <connections>
+                        <outlet property="photo" destination="6fu-BY-e1h" id="zSz-xh-zHg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uPT-7D-0aK">
+                    <connections>
+                        <action selector="takeAPhoto:" destination="BYZ-38-t0r" id="Qgf-y5-qIb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-133" y="602"/>
         </scene>
