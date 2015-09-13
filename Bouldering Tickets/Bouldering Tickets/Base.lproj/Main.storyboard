@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7X5-8h-obi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2ab-8I-96D">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--User Table View Controller-->
+        <!--Список клиентов-->
         <scene sceneID="bNs-0r-L2k">
             <objects>
                 <tableViewController id="7X5-8h-obi" customClass="UserTableViewController" customModule="Bouldering_Tickets" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,12 +68,19 @@
                             <outlet property="delegate" destination="7X5-8h-obi" id="Gl8-N3-oDt"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Список клиентов" id="9gX-aG-Ghw">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="c3v-T7-Rcx">
+                            <connections>
+                                <segue destination="LSN-wb-01T" kind="presentation" identifier="AddItem" id="rWD-pB-Zvq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxy-7T-eb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1021" y="236"/>
+            <point key="canvasLocation" x="-209" y="236"/>
         </scene>
-        <!--View Controller-->
+        <!--Добавление клиента-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bouldering_Tickets" customModuleProvider="target" sceneMemberID="viewController">
@@ -257,6 +264,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="rJF-EK-14f" secondAttribute="trailing" id="jcE-3r-1ui"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Добавление клиента" id="h51-H2-kvG">
+                        <barButtonItem key="leftBarButtonItem" title="Отмена" id="eTW-Ww-XIz"/>
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="a0B-QG-BGH"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
                     <connections>
@@ -285,7 +296,43 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-131" y="478"/>
+            <point key="canvasLocation" x="1493" y="478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dnP-Pm-LuQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ab-8I-96D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yn5-LS-YGU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7X5-8h-obi" kind="relationship" relationship="rootViewController" id="z1d-G3-drP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="79j-eR-cxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1021" y="236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GD0-8E-FEM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LSN-wb-01T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dff-Zv-cqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lnv-10-uHg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JoB-RC-uYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="478"/>
         </scene>
     </scenes>
     <resources>
